@@ -1,0 +1,41 @@
+[
+  {
+    "id": "2f4d635d150a4f9c8eedfc44",
+    "nombre": "preuba de esto",
+    "imagen": "https://i.postimg.cc/HxdvTwqJ/events.jpg",
+    "precio": "3737373",
+    "stock": 20,
+    "idcat": "0d75d5c7ac85934cbab2d87f",
+    "date": "2024-03-11T21:08:26.924Z"
+  },
+  {
+    "id": "340ea9650b198e3dea07d489",
+    "nombre": "pepito",
+    "imagen": "https://i.postimg.cc/HxdvTwqJ/events.jpg",
+    "precio": "1",
+    "stock": "1",
+    "idcat": "514295123246127b400b6563",
+    "date": "2024-03-19T22:17:59.801Z"
+  },
+  {
+    "id": "379c8aa504a5fbddcb3e27fc",
+    "nombre": "Jonathan",
+    "imagen": "https://i.postimg.cc/HxdvTwqJ/events.jpg",
+    "precio": "1",
+    "stock": "1",
+    "idcat": "8d033c41ef9df29471cbff7a",
+    "date": "2024-03-19T22:25:12.177Z"
+<<<<<<< HEAD
+  },
+  {
+    "id": "603eac01756b784ea5b4d5ed",
+    "nombre": "Juan",
+    "imagen": "https://i.postimg.cc/HxdvTwqJ/events.jpg",
+    "precio": "6",
+    "stock": "1",
+    "idcat": "bf6556c739e262b2672775e5",
+    "date": "2024-04-02T22:33:49.975Z"
+=======
+>>>>>>> 7bd71d8b1780526666cd3a2122f4536857a44108
+  }
+]

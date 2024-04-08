@@ -1,0 +1,33 @@
+[
+  {
+    "id": "497ccc716f9904985ad3cb9a",
+    "username": "nuevoUsername",
+    "email": "nuevo@email.com",
+    "role": "user",
+    "password": "nuevaPassword"
+  },
+  {
+    "id": "b2892c8eb2c1df84e88bef3a", 
+    "role": "user"
+  },
+  {
+    "id": "3bf02a912ea27a43a4dfb4f9",
+    "role": "user"
+  },
+  {
+    "id": "336a949f3516e81276940dba",
+    "role": "user"
+  },
+  {
+    "id": "ebef67ebdbdb0121b5d96422",
+    "username": "prueba de esto hoy",
+    "email": "preuba@gmail.com",
+    "role": "user"
+  },
+  {
+    "id": "4d23d189ad47dc987cabc45d",
+    "username": "prueba de esto hoy",
+    "email": "preuba@gmail.com",
+    "role": "user"
+  }
+]

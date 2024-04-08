@@ -1,0 +1,20 @@
+[
+  {
+    "id": "5b40cbfe6a5041ace64f9979",
+    "nombre": "Juan",
+    "imagen": "https://i.postimg.cc/HxdvTwqJ/events.jpg",
+    "precio": "3",
+    "stock": "1",
+    "idcat": "7b031ae2d5dc61b2fc38c7cf",
+    "date": "2024-03-19"
+  },
+  {
+    "id": "fce8bfc716bdbb0651d7b53a",
+    "nombre": "nueva prueba",
+    "imagen": "https://i.postimg.cc/HxdvTwqJ/events.jpg",
+    "precio": "3737373",
+    "stock": 50,
+    "idcat": "15ea871cd088eecc0d5d6768",
+    "date": "2024-03-19T18:54:57.741Z"
+  }
+]
