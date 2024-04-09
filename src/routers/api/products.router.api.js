@@ -13,7 +13,7 @@ productsRouter.post("/",isAuth, isAdmin, propsProducts, async (req, res, next) =
     const response = await productsManager.create(data);
     return res.status(201).json({
       statusCode: 201,
-      response,
+      response, 
     });
   } catch (error) {
     return next(error);

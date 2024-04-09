@@ -1,19 +1,21 @@
 import { Router } from "express";
 import has8char from "../../middlewares/has8char.mid.js";
 import passport from "../../middlewares/passport.mid.js";
+import passCallBack from "../../middlewares/passCallBack.mid.js";
+
 
 const sessionsRouter = Router();
 
 //register
 sessionsRouter.post(
   "/register",
-  has8char,
-  passport.authenticate("register", {
-    session: false,
-    failureRedirect: "/api/sessions/badauth",
-  }),
-
-  async (req, res, next) => { 
+  // has8char,
+  // passport.authenticate("register", {
+  //   session: false,
+  //   failureRedirect: "/api/sessions/badauth",
+  // }),
+  passCallBack("register"),
+  async (req, res, next) => {
     try {
       return res.json({
         statusCode: 201,
@@ -28,7 +30,8 @@ sessionsRouter.post(
 //login
 sessionsRouter.post(
   "/login",
-  passCallBack("login"),
+  passCallBack("jwt"),
+  isAdmin,
   async (req, res, next) => {
     try {
       return res
@@ -56,7 +59,6 @@ sessionsRouter.get(
   "/google",
   passport.authenticate("google", { scope: ["email", "profile"] })
 );
-
 
 //google-callback
 sessionsRouter.get(
@@ -142,7 +144,6 @@ sessionsRouter.post(
   }
 );
 
-
 //badauth
 sessionsRouter.get("/badauth", (req, res, next) => {
   try {
@@ -155,4 +156,15 @@ sessionsRouter.get("/badauth", (req, res, next) => {
   }
 });
 
+//signout/cb
+sessionsRouter.get("/signout/cb", (req, res, next) => {
+  try {
+    return res.json({
+      statusCode: 400,
+      message: "Already done",
+    });
+  } catch (error) {
+    return next(error);
+  }
+});
 export default sessionsRouter;
